@@ -1,0 +1,46 @@
+{
+  "name": "superscalar-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for SuperScalar — Bitcoin Lightning channel factories. Query protocol specs, estimate UTXO savings, and explore factory architectures.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bitcoin",
+    "lightning-network",
+    "lightning",
+    "channel-factory",
+    "superscalar",
+    "layer2",
+    "taproot",
+    "musig2",
+    "utxo",
+    "payments",
+    "scaling",
+    "lsp"
+  ],
+  "homepage": "https://github.com/8144225309/SuperScalar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8144225309/superscalar-mcp"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "superscalar-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "typescript": "^5.7.0"
+  }
+}
