@@ -1,0 +1,66 @@
+{
+  "manifest_version": "0.3",
+  "name": "superscalar-mcp",
+  "display_name": "SuperScalar — Bitcoin Lightning Channel Factories",
+  "version": "0.1.0",
+  "description": "Query SuperScalar protocol architecture, estimate UTXO savings from shared channel factories, and explore Lightning scaling infrastructure.",
+  "long_description": "MCP server for SuperScalar — Bitcoin Lightning channel factories that onboard N users into a single shared UTXO with no soft fork required. Explore Decker-Wattenhofer invalidation trees, timeout-signature trees, MuSig2 signing, Poon-Dryja channels, watchtower infrastructure, and Noise NK transport. Estimate on-chain savings from channel factories vs individual Lightning channel opens.",
+  "author": {
+    "name": "8144225309",
+    "url": "https://github.com/8144225309"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8144225309/superscalar-mcp"
+  },
+  "homepage": "https://github.com/8144225309/SuperScalar",
+  "documentation": "https://github.com/8144225309/superscalar-mcp#readme",
+  "support": "https://github.com/8144225309/superscalar-mcp/issues",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/index.js"]
+    }
+  },
+  "tools": [
+    {
+      "name": "superscalar_overview",
+      "description": "Get an overview of the SuperScalar protocol — Bitcoin Lightning channel factories that onboard N users in one shared UTXO with no soft fork required."
+    },
+    {
+      "name": "superscalar_estimate_savings",
+      "description": "Estimate on-chain UTXO and fee savings from using SuperScalar channel factories vs individual Lightning channel opens."
+    },
+    {
+      "name": "superscalar_architecture",
+      "description": "Detailed explanation of a specific SuperScalar component: invalidation tree, timeout-signature tree, channel layer, MuSig2 signing, watchtower, or transport protocol."
+    },
+    {
+      "name": "superscalar_resources",
+      "description": "Get links to SuperScalar resources: source code, website, related reading on Lightning channel factories, and the original ZmnSCPxj proposal."
+    }
+  ],
+  "keywords": [
+    "bitcoin",
+    "lightning-network",
+    "lightning",
+    "channel-factory",
+    "superscalar",
+    "layer2",
+    "taproot",
+    "musig2",
+    "utxo",
+    "payments",
+    "scaling"
+  ],
+  "license": "MIT",
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "node": ">=16.0.0"
+    }
+  }
+}
